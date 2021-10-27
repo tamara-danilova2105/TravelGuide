@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Нью-Йорк</title>
+    <link rel="stylesheet" href="newyork.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,300;1,500&display=swap" rel="stylesheet">
+    <link rel="icon" href="icon.ico">
+</head>
+<body>
+
+        <!-- МЕНЮ -->
+
+        <div class="menu" >
+            <nav class="nav">
+                <a class="item first" href="index.html">travel guide</a>
+                <!-- <a class="item" href="#">Запад США</a> -->
+                <a class="item" href="peru.html">Перу</a>
+                <!-- <a class="item" href="#">Санкт-Петербург</a> -->
+                <a class="item" href="turkey.html">турция</a>
+                <!-- <a class="item" href="#">Кавказ</a> -->
+            </nav>
+        </div>
+
+    <!-- ЗАГОЛОВОК -->
+
+    <div class="bannerNewYork" >
+        <div class="bannerHeader">
+            <h1></h1>
+        </div>
+    </div>
+
+    <div class="about">
+        <h3>10 вещей, которые следует сделать в Нью-Йорке:</h3>
+        <p>Отметь после посещения, что сделано и посмотри результат</p>
+    </div>
+
+    <div class="todo">
+        <ul class="toDoContainer">
+            <li class="toDoAdded">Выпить коктейль в руфтоп</li>
+            <li class="toDoAdded">Послушать мюзикл на Бродвее</li>
+            <li class="toDoAdded">Встреть закат и увидеть, как зажигаются огни Манхэттена</li>
+            <li class="toDoAdded">Устроить пикник в Центральном Парке</li>
+            <li class="toDoAdded">Найти лучший ракурс и сделать фото на память</li>
+            <li class="toDoAdded">Сфотографироваться с суперменом или ковбоем на Тайм Сквер</li>
+            <li class="toDoAdded">Стать героем одного из фильмов и пройтись по местам съемок</li>
+            <li class="toDoAdded">Посмотреть выступление музыкантов или танцоров в метро</li>
+            <li class="toDoAdded">Увидеть "Звездную ночь" Ван Гога в Мuseum of Modern Art</li>
+            <li class="toDoAdded">Прокатиться на бесплатном пароме и вдоль статуи Свободы</li>   
+        </ul>
+
+        <img src="../САЙТ/photo/new-york2.jpg" alt="Нью-Йорк" width="400px" height="600px">
+    </div>
+
+
+    <!-- КАЛЬКУЛЯТОР -->
+
+    <div class="about">
+        <h3>Сколько стоит путешествие в Нью-Йорк?</h3>
+        <p>Воспользуйся калькулятором, чтобы узнать свою сумму!</p>
+    </div>
+
+
+    <div class="container">
+        <div class="calculate">
+            <form>
+                <label>1. Перелет:</label>
+                <span>₽
+                <input class="inputNumber" type="text" placeholder="стоимость перелета..." id="flight">
+                </span>
+                <br>
+
+                <label>2. Проживание:</label>
+                <span>₽
+                <input class="inputNumber" type="text" placeholder="стоимость жилья..." id="hotel">
+                <input class="inputNumber" type="text" placeholder="количество человек..." id="people">
+                </span>
+                <br>
+
+                <label>3. Виза:*
+                    <br><span class="aboutVisa">*Стоимость консульского сбора - 160$! 
+                    <br>Точная сумма зависит от курса рубля, в данном расчете округляю до 12 000₽</span>
+                </label>
+                <span class="parent">
+                <span class="child"><input value="0" type="radio" name="visaStatus" > у меня есть виза</span>
+                <span class="child"><input value="10000" type="radio" name="visaStatus" id="visa"> мне нужна виза</span>
+                </span>
+                <br>
+
+                <label>4. Питание:</label>
+                <span>₽
+                <input class="inputNumber" type="text" placeholder="лимит на день..." id="limit">
+                <input class="inputNumber" type="text" placeholder="количество дней..." id="day">
+                </span>
+                <br>
+
+                <label>5. Cувениры:</label>
+                <button id="addSouvenir">Добавить сувениры</button>
+                <select id="souvenir">
+                    <option disabled>Выбрать вариант:</option>
+                    <option value="10000">10 000 ₽</option>
+                    <option value="5000">5 000 ₽</option>
+                    <option value="2000">2 000 ₽</option>
+                    <option value="0" selected>Никаких сувениров!</option>
+                </select>
+                <br>
+
+                <label>6. Непредвиденные расходы:</label>
+                <button id="addExpenses">Заложить расходы</button>
+                <select id="expenses">
+                    <option disabled>Выбрать вариант:</option>
+                    <option value="0.10">10%</option>
+                    <option value="0.05">5%</option>
+                    <option value="0.00" selected>Мне хватит</option>
+                </select>
+                <br>
+
+                    <p class="par">7. Выбрать дополнительные активности:</p>
+                    <div>
+                        <input type="checkbox" id="activities1">
+                        <label class="option">Смотровая Top of The Rock</label>
+                        <span class="option">40$</span>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="activities2">
+                        <label class="option">Круиз к Статуе Свободы</label>
+                        <span class="option">25$</span>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="activities3">
+                        <label class="option">Музей Метрополитан</label>
+                        <span class="option">25$</span>
+                        
+                    </div>
+                    <div>
+                        <input type="checkbox" id="activities4">
+                        <label class="option">Музей MOMA</label>
+                        <span class="option">25$</span>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="activities5">
+                        <label class="option">Музей Естественной истории</label>
+                        <span class="option">25$</span>
+                    </div>
+            
+                <button id="btnСalculate">ПОСЧИТАТЬ</button>
+
+            </form>
+
+            <div class="total">
+            <div id="totalrub">
+                <h4>ИТОГО: 
+                <span id="showTotalrub"></span>
+                <span>₽</span>
+                </h4>
+            </div>
+
+            <div id="totaldol">
+                <h4>АКТИВНОСТИ: 
+                <span id="showTotaldol"></span>
+                <span>$</span>
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <img class="photoCalculate" src="https://images.unsplash.com/photo-1500916434205-0c77489c6cf7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1866&q=80" alt="НЙ" width="600px" height="auto">
+    </div>
+
+
+    <!-- МЕТРО -->
+
+    <!-- <div class="about">
+        <h3>Метро. Инструкция по применению.</h3>
+        <p>Метро в Нью-Йорке одно из самых крупных в мире.</p>
+    </div>
+
+    <div class="aboutMetro">
+
+    </div> -->
+
+
+
+
+
+
+        <!-- СОЦ СЕТИ -->
+
+<div class="contact">
+    <p class="toma" >проeкт сайта подготовлен - Тамарой Даниловой</p>
+    <a class="toma" href="https://www.instagram.com/" target="_blank"><img class="icon" src="../САЙТ/photo/instagram.jpg" alt="инстаграм" width="50px"></a>
+    <a class="toma" href="https://vk.com/feed" target="_blank"><img class="icon" src="../САЙТ/photo/vk.png" alt="Вконтакте" width="50px"></a>
+    <a class="toma" href="https://t.me/tamaradanilova21" target="_blank"><img class="icon" src="../САЙТ/photo/Telegram.png" alt="Телеграм" width="50px"></a>
+</div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="newyork.js"></script>
+</body>
+</html>

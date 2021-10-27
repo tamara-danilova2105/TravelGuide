@@ -1,0 +1,377 @@
+body {
+    background-color: #E8F6EF;
+}
+
+/* МЕНЮ СТИЛЬ */
+
+.menu {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #E8F6EF;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.item {
+    padding: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.item:hover {
+    border: #4A47A3 solid 2px;
+    color: #4A47A3;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.first {
+    margin-right: auto;
+    font-size: 30px;
+}
+
+.bannerNewYork {
+    display: flex;
+    justify-content: center;
+    height: 40vh;
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-image: url(https://images.unsplash.com/photo-1522083165195-3424ed129620?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2060&q=80);
+    background-size: cover;
+    background-position: center;
+    margin-top: 70px; 
+}
+.bannerHeader {
+    align-self: center;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgba(238, 245, 245, 0.712);
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size: 30px;
+    text-align: center;
+}
+
+P {
+    margin-top: -10px;
+}
+
+/* TODOLIST */
+.todo {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.toDoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.toDoAdded {
+    background-color: #FF75A0;
+    list-style: none;
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 1px solid white;
+    overflow-wrap: break-word;
+    width: 100%;
+    font-weight: bold;
+}
+
+.toDoCompleted {
+    background-color: #046582;
+    list-style-image: url(../САЙТ/photo/todo.png);
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 1px solid white;
+    overflow-wrap: break-word;
+    width: 100%;
+    font-weight: bold;
+    color: white;
+    text-decoration: line-through; 
+}
+
+.btn {
+    text-decoration: none;
+    
+    font-family: 'Montserrat Alternates', sans-serif;
+    padding: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 35px;
+    font-weight: bold;
+    background-color: #046582;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #FF75A0;
+    color: black;
+}
+
+/* КАЛЬКУЛЯТОР */
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.calculate {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+    width: 50%;
+    background-color: rgba(231, 154, 241, 0.158);
+    border: 2px solid #046582;
+    border-radius: 50px;
+    padding: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 5px;
+    border: none;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.inputNumber {
+    width: 300px;
+}
+
+label, .par {
+    margin-top: 10px;
+    color: #046582;
+    font-size: 20px;
+}
+
+select {
+    padding: 5px;
+    width: 400px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    display: none;
+}
+
+#addSouvenir, #addExpenses {
+    background-color: #046582;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    width: 400px;
+}
+
+#btnСalculate {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #FF75A0;
+    padding: 5px;
+    width: 100%;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+}
+
+#btnСalculate:hover {
+    background-color: #046582;
+    color: #fff;
+}
+
+.total {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#totalrub, #totaldol {
+    background-color: #046582;
+    color: #fff;
+    width: 250px;
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+
+span {
+    font-size: 20px;
+}
+
+.aboutVisa {
+    font-size: 13px;
+}
+
+.swal2-title {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.photoCalculate {
+    align-self: center;
+}
+
+
+/* СОЦ СЕТИ */
+
+.contact {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 20px;
+}
+
+.toma {
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin: 10px;
+}
+
+
+
+
+@media all and (max-width: 800px) {
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bannerNewYork {
+        height: 40vh;
+        margin-top: 200px; 
+    }
+
+    .bannerHeader {
+        font-size: 20px;
+    }
+
+    .about {
+        margin-left: 30px;
+        margin-right: 30px;
+        font-size: 25px;
+    }
+
+    .todo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    img {
+        align-self: center;
+    }
+
+
+
+    
+
+        /* КАЛЬКУЛЯТОР */
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .calculate {
+        width: 90%;
+    }
+
+    .about {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .photoCalculate {
+        margin-top: 20px;
+        width: 90%;
+        height: auto;
+    }
+
+    #addSouvenir, #addExpenses  {
+        width: 400px;
+    }
+
+    
+}
+
+    @media all and (max-width: 500px) {
+
+        /* НАЧАЛО */
+
+        .about {
+            margin-left: 0px;
+            margin-right: 0px;
+            font-size: 20px;
+        }
+
+        .toDoAdded {
+            width: 90%;
+        }
+        
+        .toDoCompleted {
+            width: 90%;
+        }
+
+
+    /* КАЛЬКУЛЯТОР */
+    .calculate {
+        width: 80%;
+    }
+    #addSouvenir, #addExpenses, #souvenir, #expenses {
+        width: 100%;
+    }
+
+    .aboutVisa {
+        font-size: 10px;
+    }
+
+    .parent {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .total {
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+    }
+
+    #totalrub, #totaldol {
+        margin-top: 10px;
+        width: 100%;
+        
+        
+    }
+
+    .option {
+        font-size: 14px;
+    }
+
+
+}

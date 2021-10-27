@@ -1,0 +1,587 @@
+body {
+    background-color: #E8F6EF;
+}
+
+/* МЕНЮ СТИЛЬ */
+
+.menu {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #E8F6EF;
+    height: 90px;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.item {
+    padding: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.item:hover {
+    border: #4A47A3 solid 2px;
+    color: #4A47A3;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.first {
+    margin-right: auto;
+    font-size: 30px;
+}
+
+
+/* БАННЕР СТИЛЬ */
+
+.banner {
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-image: url(https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);
+    background-size: cover;
+    background-position: center;
+    margin-top: 70px; 
+}
+
+.bannerHeader {
+    align-self: center;
+    text-align: center;
+    font-size: 40px;
+    background-color: rgba(238, 245, 245, 0.534);
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+p {
+    font-weight: bold;
+}
+
+/* ВСТУПЛЕНИЕ СТИЛЬ */
+
+.hello {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+/* ПУТЕВОДИТЕЛИ СТИЛЬ */
+
+.one {
+    background-image: url(../САЙТ/photo/usa.jpg);
+}
+
+.two {
+    background-image: url(../САЙТ/photo/turkey.jpg);
+}
+
+.three {
+    background-image: url(../САЙТ/photo/peru.jpg);
+}
+
+.country {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    width: 80%;
+    margin: 30px;
+    margin-left: 150px;
+}
+
+.positon {
+    text-align: center;
+    font-size: 30px;
+    background-color: rgba(238, 245, 245, 0.575);
+    padding-left: 100px;
+    padding-right: 100px;
+    border-radius: 40px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    width: 300px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+
+.btn {
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat Alternates', sans-serif;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #FF75A0;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background-color: #046582;
+    color: white;
+}
+
+.allGuide {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+/* ОБО МНЕ СТИЛЬ */
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-size: 20px;
+}
+
+li {
+    margin: 15px;
+    font-size: 20px;
+}
+
+.aboutContainer {
+    display: flex;
+}
+
+h4 {
+    font-size: 25px;
+}
+
+/* ОТЗЫВЫ СТИЛЬ */
+
+.testimonials {
+    display: flex;
+    justify-content: center;
+    height: 30vh;
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-image: url(https://images.unsplash.com/photo-1532618261731-e3346f1705bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80);
+    background-size: cover;
+    background-position: center;
+    margin-top: 70px; 
+}
+
+.testimonialsBanner {
+    align-self: center;
+    text-align: center;
+    font-size: 40px;
+    background-color: rgba(238, 245, 245, 0.774);
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#testimonialsContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#testimonials {
+    border-radius: 20px;
+}
+
+#back, #next {
+    padding: 7px;
+    margin-bottom: 0px;
+}
+
+/* ВОПРОСЫ СТИЛЬ */
+
+.bannerFaq {
+    display: flex;
+    justify-content: center;
+    height: 30vh;
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-image: url(https://images.unsplash.com/photo-1476973422084-e0fa66ff9456?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1883&q=80);
+    background-size: cover;
+    background-position: center;
+    margin-top: 70px; 
+}
+
+.bannerHeaderFaq {
+    align-self: center;
+    text-align: center;
+    font-size: 40px;
+    background-color: rgba(238, 245, 245, 0.774);
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.acor-container {
+    margin: 20px 0;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+}
+.acor-container .acor-body {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    height: 0;
+    color: rgba(0, 0, 0, 0);
+    background-color: #E8F6EF;
+    line-height: 18px;
+    padding: 0 30px;
+    box-sizing: border-box;
+    transition: color 0.5s, padding 0.5s;
+    overflow: hidden;
+    font-size: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2), 0 10px 16px rgba(0,0,0,0.2);
+}
+.acor-container .acor-body p {
+    margin: 0 0 10px;
+}
+.acor-container label {
+    cursor: pointer;
+    background-color: #FF75A0;
+    display: block;
+    padding: 15px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 100;  
+    font-size: 20px;
+    margin: 0 0 5px;
+    transition: color .35s;
+}
+.acor-container label:hover {
+    color: #FFF;
+}
+.acor-container input{
+    display: none;
+}
+.acor-container label:before {
+    content: '\276F';
+    float: right;
+}
+.acor-container input:checked + label {
+    background-color: #046582;
+    color: #FFF;
+    box-shadow: 0 8px 26px rgba(0,0,0,0.4), 0 28px 30px rgba(0,0,0,0.3);
+}
+.acor-container input:checked + label:before {
+    transition: transform .35s;
+    transform: rotate(90deg);
+}
+.acor-container input:checked + label + .acor-body {
+    height: auto;
+    margin-top: -5px;
+    color: #000;
+    padding: 20px 30px 10px;
+}
+
+/* ЗАКАЗАТЬ */
+
+.bannerOrder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50vh;
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-image: url(https://images.unsplash.com/photo-1608679627228-a8393e0f3fa5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);
+    background-size: cover;
+    background-position: center;
+    margin: 40px;
+}
+
+.bannerHeaderOrder {
+    align-self: center;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgba(238, 245, 245, 0.774);
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin: 30px;
+    background-color: rgba(238, 245, 245, 0.774);
+    padding: 30px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+
+input {
+    padding: 15px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    border: none;
+}
+
+
+.btnOrder {
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat Alternates', sans-serif;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #FF75A0;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    margin-left: 35px;
+}
+
+.btnOrder:hover {
+    background-color: #046582;
+    color: white;
+}
+
+/* СОЦСЕТИ */
+
+.contact {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 20px;
+}
+
+.toma {
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin: 10px;
+}
+
+
+@media all and (max-width: 800px) {
+    .menu {
+        height: 35vh;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item {
+        margin: 0;
+    }
+
+    .banner {
+        height: 50vh;
+        margin-top: 350px; 
+    }
+
+    .hello {
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 20px;
+    }
+
+    .country {
+        display: flex;
+        justify-content: center;
+        height: 80vh;
+        margin-left: 70px;
+    }
+
+    .positon {
+        margin-bottom: 30px;
+        margin-left: 50px;
+        margin-top: 600px;
+    }
+
+    .aboutContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about {
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 20px;
+    }
+
+    img {
+        align-self: center;
+    }
+
+    .testimonials, .bannerFaq {
+        height: 30vh;
+        margin-top: 70px; 
+    }
+
+    .friend {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .acor-container {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .bannerOrder {
+        height: 70vh;
+    }
+    
+    .form {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-left: 160px;
+        margin-right: 160px;
+    }
+
+    .btnOrder {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .menu {
+        height: 30vh;
+        font-size: 20px;
+    }
+
+    .banner {
+        display: flex;
+        justify-content: center;
+        height: 40vh;
+        font-family: 'Montserrat Alternates', sans-serif;
+        margin-top: 250px; 
+    }
+    
+    .bannerHeader {
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .hello {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 15px;
+    }
+
+    .country {
+        display: flex;
+        justify-content: center;
+        height: 70vh;
+        margin-left: 40px;
+    }
+
+    .positon {
+        margin-bottom: 30px;
+        margin-left: 30px;
+        margin-top: 400px;
+        font-size: 20px;
+        width: 150px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .btn {
+        font-size: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .acor-container {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 15px;
+    }
+
+    .bannerOrder {
+        margin: 20px;
+    }
+
+    .bannerHeaderOrder, .form, .btnOrder {
+        font-size: 20px;
+    }
+
+    .form {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .tomaaboutone {
+        width: 300px;
+    }
+
+    .tomaabout:hover {
+        width: 300px;
+        height: 300px;
+    }
+
+    .testimonialsBanner, .bannerHeaderFaq {
+        font-size: 20px;
+    }
+
+    .bannerFaq, .testimonials {
+        height: 20vh;
+    }
+
+    #testimonials {
+        width: 65%;
+        height: auto;
+    }
+
+}
+
+@media all and (max-width: 360px) {
+    .menu {
+        height: 35vh;
+    }
+
+    .bannerHeader {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .country {
+        margin-left: 30px;
+        height: 80vh;
+    }
+
+    .positon {
+        margin-bottom: 30px;
+        margin-left: 20px;
+        margin-top: 400px;
+        font-size: 15px;
+    }
+
+    .bannerOrder {
+        height: 90vh;
+        font-size: 15px;
+    }
+
+    .contact {
+        font-size: 10px;
+    }
+
+    .item {
+        font-size: 15px;
+    }
+
+}

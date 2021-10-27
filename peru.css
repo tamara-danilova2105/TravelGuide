@@ -1,0 +1,217 @@
+body {
+    background-color: #E8F6EF;
+}
+
+/* МЕНЮ СТИЛЬ */
+
+.menu {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #E8F6EF;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.item {
+    padding: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.item:hover {
+    border: #4A47A3 solid 2px;
+    color: #4A47A3;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.first {
+    margin-right: auto;
+    font-size: 30px;
+}
+/* БАННЕР */
+
+.bannerPeru {
+    display: flex;
+    justify-content: center;
+    height: 40vh;
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-image: url(https://images.unsplash.com/photo-1545330785-15356daae141?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2054&q=80);
+    background-size: cover;
+    background-position: center;
+    margin-top: 70px; 
+}
+.bannerHeader {
+    align-self: center;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgba(238, 245, 245, 0.712);
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size: 30px;
+    text-align: center;
+    margin: 25px;
+}
+
+/* ВИКТОРИНА */
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;  
+    padding: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+    background-image: url(https://images.unsplash.com/photo-1531968455001-5c5272a41129?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1981&q=80);  
+}
+
+.one, .two, .three, .four, .five {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 5px;
+    background-color: rgba(238, 245, 245, 0.712);
+    padding: 15px;
+    border-radius: 20px;
+    width: 80%;
+}
+
+input {
+    width: 20px;
+    height: 20px;
+}
+
+label {
+    font-size: 25px;
+    color: #4A47A3;
+}
+
+.parent {
+    margin-top: 10px;
+}
+
+.btn {
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat Alternates', sans-serif;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #FF75A0;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background-color: #046582;
+    color: white;
+}
+
+.swal2-title {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.swal2-html-container {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+/* СОЦ СЕТИ */
+
+.contact {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 20px;
+}
+
+.toma {
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin: 10px;
+}
+
+
+
+
+@media all and (max-width: 800px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bannerPeru {
+        height: 40vh;
+        margin-top: 200px; 
+    }
+
+    .bannerHeader {
+        font-size: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    form { 
+        padding: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+}
+
+@media all and (max-width: 500px) {
+    .about {
+        margin-left: 0px;
+        margin-right: 0px;
+        font-size: 15px;
+    }
+
+    .one, .two, .three, .four, .five {
+        font-size: 15px;
+        width: 80%;
+    }
+
+    input {
+        width: 15px;
+        height: 15px;
+    }
+    
+    label {
+        font-size: 20px;
+    }
+    
+    .parent {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .btn {
+        font-size: 20px;
+        padding: 10px;
+    }
+}

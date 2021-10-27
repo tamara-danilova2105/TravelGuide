@@ -1,0 +1,236 @@
+body {
+    background-color: #E8F6EF;
+}
+
+/* МЕНЮ СТИЛЬ */
+
+.menu {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #E8F6EF;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.item {
+    padding: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.item:hover {
+    border: #4A47A3 solid 2px;
+    color: #4A47A3;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.first {
+    margin-right: auto;
+    font-size: 30px;
+}
+
+
+
+/* ТУРЦИЯ */
+
+.bannerTurkey {
+    display: flex;
+    justify-content: center;
+    height: 40vh;
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-image: url(https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80);
+    background-size: cover;
+    background-position: center;
+    margin-top: 70px; 
+}
+.bannerHeader {
+    align-self: center;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgba(238, 245, 245, 0.712);
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size: 30px;
+    text-align: center;
+    margin: 25px;
+}
+
+.container {
+    display: flex;
+    margin-top: 20px;
+}
+
+.one {
+    background-image: url(../САЙТ/photo/turkey/photo1.jfif);
+}
+
+.two {
+    background-image: url(../САЙТ/photo/turkey/photo2.jfif);
+}
+
+.three {
+    background-image: url(../САЙТ/photo/turkey/photo3.jfif);
+}
+
+.four {
+    background-image: url(../САЙТ/photo/turkey/photo4.jfif);
+}
+
+.five {
+    background-image: url(../САЙТ/photo/turkey/photo5.jfif);
+}
+
+.six {
+    background-image: url(../САЙТ/photo/turkey/photo6.jfif);
+}
+
+.pictures {
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+    flex: 1;
+    margin: 5px;
+}
+
+.place {
+    background-color: white;
+    margin: 40px;
+    font-size: 0;
+    text-align: center;
+}
+
+.new {
+    flex: 4;
+}
+
+.new .place {
+    transition: all 1s ease-in;
+    font-size: 40px;
+}
+
+.par, .parTwo {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.photo, .photoTwo {
+    display: flex;
+}
+
+.btn {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 30px;
+    border: none;
+    background-color: #E8F6EF;
+    font-weight: bold;
+}
+
+.text {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 30px;
+    margin: 20px;
+}
+
+/* СОЦСЕТИ */
+
+.contact {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 20px;
+}
+
+.toma {
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin: 10px;
+}
+
+@media all and (max-width: 800px) {
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bannerTurkey {
+        height: 40vh;
+        margin-top: 200px; 
+    }
+
+    .bannerHeader {
+        font-size: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .par {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .parTwo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .photo, .photoTwo {
+        align-self: center;
+    }
+
+   
+}
+
+@media all and (max-width: 500px) {
+    .about {
+        margin-left: 0px;
+        margin-right: 0px;
+        font-size: 15px;
+    }
+
+    #myphoto, #myphotoTwo {
+        width: 220px;
+    }
+
+    .btn {
+        font-size: 15px;
+    }
+
+    .text {
+        font-size: 20px;
+    }
+
+    .new .place {
+        transition: all 1s ease-in;
+        font-size: 30px;
+    }
+
+
+}
